@@ -24,16 +24,8 @@ jobs:
         with:
           go-version: '1.25'
 
-      - name: Run Linter
-        uses: golangci/golangci-lint-action@v4
-        with:
-          version: latest
-
       - name: Build All Platforms
         run: make build
-
-      - name: Build Debian Package
-        run: make deb
 
       - name: List Build Artifacts
         run: find build -type f

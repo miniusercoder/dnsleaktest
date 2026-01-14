@@ -2,7 +2,7 @@
 
 A command-line tool implemented in Go to test for DNS leaks and DNS rebinding vulnerabilities.
 
-This tool performs a comprehensive "BigDig" DNS leak test, checking which DNS servers are actually resolving your requests. It can also perform a specific test for DNS rebinding vulnerabilities.
+This tool performs a comprehensive [BigDig](https://bigdig.energy/) DNS leak test, checking which DNS servers are actually resolving your requests. It can also perform a specific test for DNS rebinding vulnerabilities.
 
 ## Features
 
