@@ -36,6 +36,16 @@ To clean build artifacts:
 make clean
 ```
 
+## Installation
+
+To install the binary to `/usr/local/bin/` (Linux amd64 only):
+
+```bash
+sudo make install
+```
+
+> **Note**: Ensure you run `make build` before installing, as the install command copies the compiled binary from the `build/` directory.
+
 ## Usage
 
 Run the compiled binary for your platform.
@@ -67,4 +77,3 @@ Run the compiled binary for your platform.
 ## License
 
 MIT License. See [LICENSE](LICENSE) file for details.
-
