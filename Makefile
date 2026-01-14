@@ -33,3 +33,5 @@ build-darwin: ## Build for macOS (amd64, arm64)
 	GOOS=darwin GOARCH=amd64 CGO_ENABLED=0 go build -ldflags '$(LDFLAGS)' -o $(BUILD_DIR)/$(APP_NAME)-darwin-amd64 .
 	GOOS=darwin GOARCH=arm64 CGO_ENABLED=0 go build -ldflags '$(LDFLAGS)' -o $(BUILD_DIR)/$(APP_NAME)-darwin-arm64 .
 
+install-linux: ## Install Linux binary to /usr/local/bin
+	cp $(BUILD_DIR)/$(APP_NAME)-linux-amd64 /usr/local/bin/$(APP_NAME)
